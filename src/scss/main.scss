@@ -1,6 +1,6 @@
+ @use 'sass:math';
  
-  @use 'sass:math';
- 
+  @import 'components/_var';
   @import 'components/header/header';
   @import 'components/grid';
   @import 'components/sections';
@@ -9,6 +9,4 @@
   @import 'components/fonts';
   @import 'components/footer';
   @import 'components/popup'; 
-  @import 'components/list';   
-
-@import 'modules/modules.scss'
+  @import 'components/list';

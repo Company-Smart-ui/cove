@@ -1,0 +1,36 @@
+.header-nav{
+    &-icon{
+        display: block;
+        width: 22px;
+        height: 17px;
+        position: relative;
+        &::after, &::before, &>span{
+            content: '';
+            display: block;
+            position: absolute;
+            background: $color-green;
+            width: 100%;
+            height: 3px;
+            left: 0;
+        }
+        &::before{top: 0;}
+        &::after{bottom: 0;}
+        &>span{
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+    &-menu-btn{
+        font-size: $font-size - 2px;
+        &::after{display: none;}
+    }
+    &-mobile{
+        .header-nav-menu-btn{
+            background: $header-color;
+            border-radius: 2px;
+            border: 1px solid $border-color;
+            padding: 13px 10px;
+        }
+    }
+}
+  

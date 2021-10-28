@@ -1,24 +1,24 @@
-body{
-  background-color: rgb(199, 199, 199);
-  overflow-x: hidden;
-}
-
-.body, html{
+html , body{
+  margin: 0;
+  padding: 0;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #fff;
+  overflow-x: hidden;
+  line-height: 1;
+  font-size: $font-size;
+  display: flex;
+  flex-direction: column;
 }
 
 header, footer {
   flex: 0 0 auto;
 }
 
-.main{
+main{
   flex: 1 0 auto;
-}
-
-html , body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -30,10 +30,14 @@ a{
   color: inherit;
 }
  
-h1,h2,h3,h4{
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.5;
+h1, h2, h3{
+  font-size: 31px;
+}
+
+.container-xxl{
+  @include xxl{
+    max-width: 1380px
+  }
 }
 
 figure{
@@ -48,6 +52,18 @@ img {
   object-fit: cover;
 }
 
+.color{
+  &-green{color: $color-green;}
+  &-text{color: $color-text;}
+  &-blue{color: $color-blue}
+}
+
+.border{
+  &-bottom{border-bottom: 1px solid $border-color;}
+  &-top{border-top: 1px solid $border-color;}
+  &-left{border-left: 1px solid $border-color;}
+  &-right{border-right: 1px solid $border-color;}
+}
 
   
  

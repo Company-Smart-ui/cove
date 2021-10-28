@@ -1,1 +1,43 @@
- 
+ .steps{
+    &-item{
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid $color-blue;
+        color: $color-blue;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active{
+            background: $color-green;
+            border-color: $color-green;
+            color: #fff;
+        }
+        @include sm{
+            width: 50px;
+            height: 50px;
+        }
+        @include lg{
+            width: 100%;
+            height: auto;
+            justify-content: space-between;
+            align-items: stretch;
+            height: 55px;
+            font-size: 16px;
+            &-numder{
+                width: 37px;
+                border-right: 1px solid $color-blue;
+                
+            }
+            &.active{
+                .steps-item-numder{
+                    border-color: #fff;
+                }
+            }
+            &-text{
+                flex: 1;
+            }
+        }
+    }
+ }

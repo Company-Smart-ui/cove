@@ -1,3 +1,15 @@
-
-
+.header{
+    &-top{background: $header-color}
+    &-text{
+        font-size: $font-size + 4px;
+    }
+}
+.logo{
+    display: block;
+    max-width: 90px;
+    width: 100%;
+    @include md{
+        max-width: 120px
+    }
+}
 @import'./nav';
