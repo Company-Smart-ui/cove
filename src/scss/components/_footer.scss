@@ -1,2 +1,36 @@
-
+footer{
+    margin-top: 40px;
+    @include lg{
+        margin-top: 90px;
+    }
+    img{
+        max-width: 95px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    h4{
+        max-width: 150px;
+        padding-left: 7px;
+    }
+    .button{line-height: 45px;}
+}
+.social{
+    a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+        svg{
+            fill: $color-green
+        }
+        &:hover{
+            svg{
+                fill: #fff
+            }
+        }
+    }
+}
  

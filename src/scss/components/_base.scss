@@ -7,10 +7,14 @@ html , body{
 body{
   background-color: #fff;
   overflow-x: hidden;
-  line-height: 1;
-  font-size: $font-size;
+  line-height: $font-size + 4px;
+  font-size: $font-size - 2px;
   display: flex;
   flex-direction: column;
+  @include md{
+    line-height: $font-size + 6px;
+    font-size: $font-size;
+  }
 }
 
 header, footer {
@@ -28,10 +32,41 @@ main{
 a{
   text-decoration: none;
   color: inherit;
+  transition: $transition;
+  &:hover{
+    color: $color-green;
+    text-decoration: underline;
+  }
 }
- 
+
 h1, h2, h3{
-  font-size: 31px;
+  margin-bottom: 0;
+  text-align: center;
+  @include lg{
+    text-align: left;
+  }
+}
+h1{
+  font-size: 20px;
+  @include lg{
+    font-size: 31px;
+  }
+}
+h2, h3{
+  font-size: 16px;
+  @include lg{
+    font-size: 31px;
+  }
+}
+h4{
+  font-size: 19px;
+  margin-bottom: 0;
+}
+h1{
+  padding: 20px 0;
+  @include lg{
+    padding: 35px 0 50px;
+  }
 }
 
 .container-xxl{
@@ -56,6 +91,14 @@ img {
   &-green{color: $color-green;}
   &-text{color: $color-text;}
   &-blue{color: $color-blue}
+  &-white{color: #fff}
+}
+
+.bg{
+  &-green{background-color: $color-green;}
+  &-grey{background-color: $header-color;}
+  &-blue{background-color: $color-blue}
+  &-blue2{background-color: $color-blue2;}
 }
 
 .border{
@@ -65,6 +108,49 @@ img {
   &-right{border-right: 1px solid $border-color;}
 }
 
-  
- 
- 
+.white-block{
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0px 0px 17.43px 3.57px rgba(0, 0, 0, 0.1);
+  padding: 25px 8px 10px;
+  @include lg{
+    padding: 40px 30px 50px 40px
+  }
+}
+.blue-block{
+  background: rgba($color-blue, 0.102);
+}
+
+.back-to-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 120px;
+  right: 5%;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  border: 2px solid $color-green;
+  width: 42px;
+  height: 42px;
+  opacity: 0;
+  transition: $transition;
+  svg{fill: $color-green}
+  &.show{
+    visibility: visible;
+    opacity: 1;
+  }
+  @include lg{right: 10%;}
+}
+.hexagon{
+  position: relative;
+  &:before, 
+  &:after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute; 
+    left: 0;
+  }
+}

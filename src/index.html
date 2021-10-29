@@ -4,7 +4,21 @@
 })
 
 <main>
+  @@include('./html-templates/modules/steps.html', {
+    step1: 'active',
+    step2: '',
+    step3: '',
+    step4: '',
+    step5: '',
+    step6: '',
+  })
+
+  <div class="container-xxl">
+    <h1>Search for your holiday...</h1>
+  </div>
+
   @@include('./html-templates/homepage/_main.html')
+
 </main>
 
 @@include('./html-templates/footer.html')

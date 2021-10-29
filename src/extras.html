@@ -1,0 +1,26 @@
+@@include('html-templates/head.html',{
+    title:'Extras',
+    metadesc:'page with very interesting content'
+})
+  
+<main>
+    @@include('./html-templates/modules/steps.html', {
+      step1: 'done',
+      step2: 'done',
+      step3: 'active',
+      step4: '',
+      step5: '',
+      step6: '',
+    })
+  
+    <div class="container-xxl">
+      <h1>Optional holiday extras</h1>
+    </div>
+  
+  
+</main>
+  
+@@include('./html-templates/footer.html')
+  
+</body>
+</html>

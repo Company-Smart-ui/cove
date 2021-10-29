@@ -1,0 +1,26 @@
+@@include('html-templates/head.html',{
+    title:'Confirmation',
+    metadesc:'page with very interesting content'
+})
+  
+<main>
+    @@include('./html-templates/modules/steps.html', {
+      step1: 'done',
+      step2: 'done',
+      step3: 'done',
+      step4: 'done',
+      step5: 'done',
+      step6: 'active',
+    })
+  
+    <div class="container-xxl">
+      <h1>Confirmation of your holiday with us</h1>
+    </div>
+  
+  
+</main>
+  
+@@include('./html-templates/footer.html')
+  
+</body>
+</html>

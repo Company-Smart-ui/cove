@@ -1,20 +1,27 @@
 "use strict"
-const body =document.querySelector("body");
-const html=document.querySelector("html");
-const header=document.querySelector(".header");
-const navBtn=document.querySelector(".nav__btn");
- 
-window.onload= function(){
-  pagescroll(); 
-}  ;
- 
-      @@include('modules/nav.js') 
-      @@include('modules/fixed-header.js')
-  
-      @@include('lazyscripts.js')
-      @@include('modules/accordion.js')
+let goTopBtn = document.querySelector('.back-to-top');
 
- 
+window.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+});
 
-
-
+function backToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+function trackScroll(btn) {
+    window.addEventListener('scroll', function(){
+        let scrolled = window.pageYOffset;
+        let coords = document.documentElement.clientHeight;
+    
+        if (scrolled > coords) {
+            goTopBtn.classList.add('show');
+        }
+        if (scrolled < coords) {
+            goTopBtn.classList.remove('show');
+        }
+    })
+}

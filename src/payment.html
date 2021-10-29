@@ -1,0 +1,26 @@
+@@include('html-templates/head.html',{
+    title:'Payments',
+    metadesc:'page with very interesting content'
+})
+  
+<main>
+    @@include('./html-templates/modules/steps.html', {
+      step1: 'done',
+      step2: 'done',
+      step3: 'done',
+      step4: 'done',
+      step5: 'active',
+      step6: '',
+    })
+  
+    <div class="container-xxl">
+      <h1>Payment for your holiday</h1>
+    </div>
+  
+  
+</main>
+  
+@@include('./html-templates/footer.html')
+  
+</body>
+</html>

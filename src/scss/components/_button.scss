@@ -5,8 +5,53 @@ button{
   outline: none;
   box-shadow: none;
 }
-  
-  
- 
-
+.button{
+  display: inline-block;
+  text-transform: uppercase;
+  transition: $transition;
+  border: 1px solid transparent;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+  svg{
+    min-width: 23px;
+    min-height: 23px;
+  }
+  &.white{
+    background-color: #fff;
+    color: $color-green;
+    border-color: $border-color;
+    svg{fill: $color-green}
+    &:hover{
+      background-color: $color-green;
+      color: #fff;
+      border-color: $color-green;
+      svg{fill: #fff}
+    }
+  }
+  &.green{
+    background-color: $color-green;
+    color: #fff;
+    border-color: $color-green;
+    svg{fill: #fff}
+    &:hover{
+      background-color: #fff;
+      color: $color-green;
+      svg{fill: $color-green}
+    }
+  }
+  &.grey{
+    background-color: $header-color;
+    color: $color-green;
+    border-color: $border-color;
+    svg{fill: $color-green}
+    &:hover{
+      background-color: #fff;
+    }
+  }
+  &.b-radius{
+    border-radius: 2px;
+  }
+}
 

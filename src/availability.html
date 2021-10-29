@@ -1,0 +1,27 @@
+@@include('html-templates/head.html',{
+    title:'Availability',
+    metadesc:'page with very interesting content'
+})
+  
+<main>
+    @@include('./html-templates/modules/steps.html', {
+        step1: 'done',
+        step2: 'active',
+        step3: '',
+        step4: '',
+        step5: '',
+        step6: '',
+    })
+
+    <div class="container-xxl">
+        <h1>Lodge holidays for <span class="color-blue">2 adults, 2 children</span></h1>
+    </div>
+
+    @@include('./html-templates/availability/_main.html')
+
+</main>
+
+@@include('./html-templates/footer.html')
+
+</body>
+</html>
