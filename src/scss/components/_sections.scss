@@ -69,9 +69,83 @@
         }
     }
 }
-  
+.hexagon{
+    width: 306px;
+    min-height: 205px;
+    background-color: $color-green;
+    margin: 12px auto;
+    padding: 20px 10px;
+    display: flex;
+    line-height: 1;
+    flex-direction: column;
+    justify-content: center;
+    &::after,
+    &::before{
+        border-left: 153px solid transparent;
+        border-right: 153px solid transparent;
+    }
+    @include lg{
+        margin: 12px 0;
+        padding: 22px 15px 20px;
+    }
+}
 .section{
+    &-summary{
+        .hexagon{
+            @include lg{
+                width: 486px;
+                min-height: 280px;
+            }
+            &::after,
+            &::before{
+                @include lg{
+                    border-left: 243px solid transparent;
+                    border-right: 243px solid transparent;
+                }
+            }
+            &:before {
+                top: -12px;
+                border-bottom: 12px solid $color-green;
+            }
+            &:after {
+                bottom: -12px;
+                border-top: 12px solid $color-green;
+            }
+            .title{
+                font-size: 20px;
+                @include lg{
+                    font-size: 31px;
+                }
+            }
+            .total{
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.302);
+                .color-white{
+                    font-size: 16px;
+                    @include lg{
+                        font-size: 31px;
+                    }
+                }
+                .color-text{
+                    font-size: 50px;
+                    @include lg{
+                        font-size: 31px;
+                    }
+                }
+            }
+            .tax{
+                font-size: 20px;
+                @include lg{
+                    font-size: 31px;
+                }
+            }
+        }
+    }
+
     &-availability{
+        @include lg{
+            background-color: rgb(244, 251, 255);
+        }
         ul{
             li{
                 position: relative;
@@ -89,15 +163,7 @@
             }
         }
         .hexagon{
-            width: 306px;
-            min-height: 205px;
-            background-color: $color-green;
-            margin: 12px auto;
-            padding: 20px 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            @include md{
+            @include lg{
                 width: 260px;
                 min-height: 280px;
                 margin: 12px 0;
@@ -105,11 +171,9 @@
             }
             &::after,
             &::before{
-                border-left: 26.5vh solid transparent;
-                border-right: 26.5vh solid transparent;
-                @include md{
-                    border-left: 22.5vh solid transparent;
-                    border-right: 22.5vh solid transparent;
+                @include lg{
+                    border-left: 130px solid transparent;
+                    border-right: 130px solid transparent;
                 }
             }
             &:before {
@@ -120,7 +184,62 @@
                 bottom: -12px;
                 border-top: 12px solid $color-green;
             }
-            
+            &.sold-out{
+                background: $color-text;
+                &::after{
+                    border-top-color: $color-text
+                }
+                &::before{
+                    border-bottom-color: $color-text;
+                }
+            }
+            &-arriving{
+                font-size: 16px;
+            }
+            &-was{
+                font-size: 20px;
+            }
+            &-price{
+                font-size: 50px;
+            }
+            &-book, &-last{
+                font-size: 14px;
+            }
+            .sold-out-text{
+                font-size: 40px;
+                &::after,&::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    width: calc(100% + 60px);
+                    height: 2px;
+                    background: rgba(246,246,247,.302);
+                    @include lg{
+                        width: calc(100% + 120px);
+                    }
+                }
+                &::after{
+                    left: 0;
+                    transform: rotate(34deg) translate(32px, 101px);
+                    @include lg{
+                        transform: rotate(47deg) translate(60px,138px);
+                    }
+                }
+                &::before{
+                    right: 0;
+                    transform: rotate(-34deg) translate(-32px, 101px);
+                    @include lg{
+                        transform: rotate(-47deg) translate(-60px,138px);
+                    }
+                }
+            }
+        }
+        &-top{
+            select, .button{
+                width: 100%;
+                max-width: 190px;
+            }
         }
         .cards-item{
             margin-bottom: 30px;
@@ -129,10 +248,99 @@
             }
             .white-block{
                 flex: 1;
+                font-size: 14px;
             }
+            &-right{
+                flex: 1;
+            }
+            &-left{
+                width: 100%;
+                @include md{
+                    width: 50%;
+                }
+                @include lg{
+                    width: 40%;
+                    min-width: 350px;
+                }
+                @include xl{
+                    width: 490px;
+                }
+            }
+            &-name{
+                font-size: 20px;
+                @include lg{
+                    font-size: 31px;
+                }
+            }
+            &-photos{
+                position: absolute;
+                width: 37px;
+                height: 37px;
+                border-radius: 50%;
+                background: $color-blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 0;
+                left: 0;
+                padding: 0;
+                z-index: 1;
+                transition: $transition;
+                img{width: 20px;height: 16px;}
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        .more-details, .location{
+            font-size: 16px;
         }
         .icon{
             width: 35px;
         }
     }
+
+    &-extras{
+        
+        &-item{
+            border-bottom: 1px solid $color-green;
+            &:last-child{border-bottom: none;}
+            @include xl{
+                border-bottom: none;
+            }
+            &-quantity{
+                width: 150px;
+            }
+            &-img{
+                min-width: 45px;
+                max-width: 46px;
+            }
+            &-descr{
+                min-width: 230px;
+            }
+            &-title, &-price{
+                font-size: 20px;
+            }
+        }
+    }
+
+    &-your-details{
+        h2{
+            font-size: 20px;
+            margin-bottom: 15px;
+            @include lg{
+                font-size: 31px;
+            }
+        }
+    }
+
+    &-payment{
+        &-totals{
+            border-bottom: 1px solid $color-blue;
+        }
+        .white-block{
+            background: rgb(236, 247, 253);
+        }
+    }
 }
+  

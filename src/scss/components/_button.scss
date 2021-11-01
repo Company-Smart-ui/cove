@@ -18,6 +18,9 @@ button{
     min-width: 23px;
     min-height: 23px;
   }
+  img{
+    width: 18px;
+  }
   &.white{
     background-color: #fff;
     color: $color-green;
@@ -26,7 +29,7 @@ button{
     &:hover{
       background-color: $color-green;
       color: #fff;
-      border-color: $color-green;
+      border-color: #fff;
       svg{fill: #fff}
     }
   }

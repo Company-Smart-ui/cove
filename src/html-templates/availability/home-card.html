@@ -1,27 +1,33 @@
-<div class="white-block">
-    <div class="cards-item-top">
-        <div class="cards-item-img cards-item-left">
-            @@img
+<div class="white-block p-3 mb-3 mb-lg-0">
+    <div class="cards-item-top d-flex align-items-start flex-wrap mb-2">
+        <div class="cards-item-img cards-item-left mb-3 mb-lg-0 position-relative">
+            <img src="@@img" alt="">
+            <button type="button" class="cards-item-photos m-2">
+                <img src="./../../images/icons/camera.png" alt="">
+            </button>
         </div>
-        <div class="cards-item-info cards-item-right">
-            <div class="cards-item-name">@@name</div>
-            <div class="d-flex align-item-center">
+        <div class="cards-item-info cards-item-right ps-md-2 ps-lg-3 py-lg-3">
+            <div class="cards-item-name text-center text-md-start mb-3">@@name</div>
+            <div class="d-flex align-item-center mb-3 justify-content-center justify-content-md-start">
                 <img src="./../../images/icons/bed.png" alt="" class="icon d-inline-block me-2">
                 <span class="color-blue">@@sleeps</span>
             </div>
-            <ul>
+            <ul class="mb-2">
                 @@list
             </ul>
             <div class="cards-item-descr">@@desc</div>
         </div>
     </div>
     <div class="cards-item-bottom d-flex flex-column flex-lg-row align-items-lg-center">
-        <div class="cards-item-location cards-item-left">
+        <div class="cards-item-location cards-item-left mb-3 mb-lg-0">
             @@location
         </div>
-        <div class="cards-item-right d-flex flex-column flex-lg-row-reverse align-items-center">
-            <a href="#" class="button green d-inline-block py-2 px-3 text-uppercase color-white">AVAILABITY CALENDAR</a>
-            <a href="#" class="color-blue text-uppercase">more details</a>
+        <div class="cards-item-right ps-md-2 ps-lg-3 d-flex flex-column flex-lg-row-reverse align-items-center justify-content-lg-end">
+            <a href="#" class="button green d-inline-block p-1 py-lg-2 px-lg-3 text-uppercase color-white mb-3 mb-lg-0 ms-lg-3 d-flex align-items-center">
+                <img src="./../../images/icons/calendar.png" alt="" class="d-block me-2">
+                AVAILABITY CALENDAR
+            </a>
+            <a href="#" class="color-blue text-uppercase more-details">more details</a>
         </div>
     </div>
 </div>

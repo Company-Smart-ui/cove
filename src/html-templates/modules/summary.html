@@ -1,0 +1,25 @@
+<div class="hexagon text-center ms-lg-2 py-4">
+    <p class="text-center color-white mt-3 mb-4 title">@@title</p>
+    <div class="color-white mb-3">
+        @@if (html === 'summary'){
+            @@loop('summary-details.html', [
+                {blocks: '<span>Park:</span><span>Point Sebago</span>'},
+                {blocks: '<span>Location:</span><span>Florida</span>'},
+                {blocks: '<span>Holiday type:</span><span>Glamping</span>'},
+                {blocks: '<span>Number of nights:</span><span>4</span>'},
+                {blocks: '<span>Arrival date:</span><span>12 October 2021</span>'},
+                {blocks: '<span>Departure date:</span><span>16 October 2021</span>'},
+                {blocks: '<span>Adults:</span><span>2</span>'},
+                {blocks: '<span>Children:</span><span>2</span>'},
+                {blocks: '<span>Infants:</span><span>0</span>'},
+                {blocks: '<span>Dogs:</span><span>1</span>'},
+                {blocks: '<span>Accommodation:</span><span>Gadabout Glamping</span>'},
+            ])
+        }
+    </div>
+    <div class="total py-4 px-4 d-flex flex-column align-items-center flex-lg-row">
+        <span class="color-white pe-lg-2 pb-2 pb-lg-0">Current total:</span>
+        <span class="color-text">@@total</span>
+    </div>
+    @@taxs
+</div>

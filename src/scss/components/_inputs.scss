@@ -20,4 +20,15 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAuCAYAAACiR6CHAAABfElEQVRYhe3VsU7CQBzH8V+pNqGDjiTCExgTHTDuPoc+iIk+gEp5CZwdq8yaWBiJTjrqgAMmkhaE9s7ciY1S/g2hNcHk/01Y7nrth7ukxf7lm5RSYhl+BSxRjKFiDBVjqBhDxRgqxlAxhmqFGE9Lpsxlio+JKjMmkoDz+AGvFyXmqO56IZynEcTUgWfGdN4juA9DHN/04XbHifnp1DUntz7c+wCd/u8/kBmzs26iVLYgJVD3fFylgNRcvRVACug122tmvhgDQKNajEGO5+N6Bqj5OoajIJFEqbyKRtXWa3PFqEwD+uYxqD1Asxv+gISotQZfkIqFi6qt10y3yHtmZurm6iEHALrPI9TaAYw9W19a83wIdTQVS6MLMyDIE6MqTHboUIFeRjhvBfoVKSY70iB2JF6fGMlYfGQbFkQoIMR8EOS9M99p0K6NI9uANIDTzSJ5NH+OwQR0tlVMjKf177/ac2z4YvFXm4oxVIyhYgwVY6gYQ8UYquXBAPgEgezgYMGwPIsAAAAASUVORK5CYII=');
     background-size: 37px;
 }
-  
+.form-label{
+    text-transform: uppercase;
+    font-size: 16px;
+}  
+.form-check{
+    text-transform: uppercase;
+    font-size: 16px;
+    @include lg{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

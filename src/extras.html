@@ -14,9 +14,71 @@
     })
   
     <div class="container-xxl">
-      <h1>Optional holiday extras</h1>
+      <div class="row">
+        <h1>Optional holiday extras</h1>
+      </div>
     </div>
-  
+    
+    <section class="section-extras pt-lg-3 pb-lg-4">
+      <div class="container-xxl">
+        <div class="row align-items-center flex-column flex-lg-row justify-content-between">
+          <div class="col mb-4 mb-lg-0">
+            <div class="white-block-lg pb-3 pb-lg-5 mb-3 mb-lg-5">
+              <p class="mb-4 mb-lg-5">We offer a few extras to make your holiday all the more special. Please select from the following items any additions you would like upon your arrival.</p>
+              <div class="white-block">
+                @@loop('./html-templates/extras/items.html', [
+                  {img: './../../images/icons/towel.png', 
+                    title: 'Towel hire', 
+                    descr: 'Hire towels for the duration of your stay. Two bath towels & two hand towels are provided per pack.',
+                    price: '$14',
+                  },
+                  {img: './../../images/icons/high-chair.png', 
+                    title: 'High chair', 
+                    descr: 'We can provide a high chair for you.',
+                    price: '$10',
+                  },
+                  {img: './../../images/icons/robe.png', 
+                    title: 'Robes', 
+                    descr: 'We can provide a robes for you.',
+                    price: '$16',
+                  },
+                  {img: './../../images/icons/car.png', 
+                    title: 'Extra car', 
+                    descr: 'Bring an additional car with you for extra convenience.',
+                    price: '$20',
+                  }
+                ])
+              </div>
+            </div>
+            <div class="d-none d-lg-flex justify-content-between">
+              <a href="/" class="button grey b-radius px-4 py-2 d-inline-flex align-items-center">
+                back
+              </a>
+              <a href="/" class="button green b-radius px-4 py-2 d-inline-flex align-items-center">
+                next step
+              </a>
+            </div>
+          </div>
+          
+          @@include('./html-templates/modules/summary.html', {
+            title: 'Your holiday summary',
+            html: 'summary',
+            total: '$3,500',
+            taxs: ''
+          })
+
+        </div>
+        <div class="d-flex d-lg-none justify-content-between mt-4">
+          <a href="/" class="button grey b-radius px-4 py-2 d-inline-flex align-items-center">
+            back
+          </a>
+          <a href="/" class="button green b-radius px-4 py-2 d-inline-flex align-items-center">
+            next step
+          </a>
+        </div>
+      </div>
+    </section>
+    
   
 </main>
   

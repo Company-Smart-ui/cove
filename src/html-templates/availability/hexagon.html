@@ -1,8 +1,12 @@
-<div class="hexagon text-center @@soldout ms-md-3">
+<div class="hexagon text-center @@soldout ms-lg-3">
     @@arriving
     @@was
     @@price
-    @@booknow
-    @@last
+    @@if (booknow && last) {
+        <div class="d-flex align-items-center flex-lg-column-reverse justify-content-center">
+            @@last
+            @@booknow
+        </div>
+    }
     @@texsold
 </div>
