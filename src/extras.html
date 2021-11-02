@@ -19,10 +19,10 @@
       </div>
     </div>
     
-    <section class="section-extras pt-lg-3 pb-lg-4">
-      <div class="container-xxl">
-        <div class="row align-items-center flex-column flex-lg-row justify-content-between">
-          <div class="col mb-4 mb-lg-0">
+    <section class="section-extras section-summary pt-lg-3 pb-lg-4">
+      <form action="#" class="container-xxl">
+        <div class="row align-items-start flex-column flex-lg-row justify-content-between">
+          <div class="col mb-4 mb-lg-0 mt-lg-4">
             <div class="white-block-lg pb-3 pb-lg-5 mb-3 mb-lg-5">
               <p class="mb-4 mb-lg-5">We offer a few extras to make your holiday all the more special. Please select from the following items any additions you would like upon your arrival.</p>
               <div class="white-block">
@@ -59,13 +59,15 @@
               </a>
             </div>
           </div>
-          
-          @@include('./html-templates/modules/summary.html', {
-            title: 'Your holiday summary',
-            html: 'summary',
-            total: '$3,500',
-            taxs: ''
-          })
+
+          <div class="hexagon-wrapper">
+            @@include('./html-templates/modules/summary.html', {
+              title: 'Your holiday summary',
+              html: 'summary',
+              total: '$3,500',
+              taxs: ''
+            })
+          </div>
 
         </div>
         <div class="d-flex d-lg-none justify-content-between mt-4">
@@ -76,7 +78,7 @@
             next step
           </a>
         </div>
-      </div>
+      </form>
     </section>
     
   

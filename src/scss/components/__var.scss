@@ -1,12 +1,16 @@
 // Color
 $color-green:#689a40;
 $color-text: #303133;
-$color-blue: rgb(66, 174, 239);
+$color-blue: #42aeef;
 $color-blue2: #58c7d4;
+$color-grey: #666;
 $header-color: #f6f6f7;
 $border-color: #d8d8d9;
 
+$font-size-14: 14px;
 $font-size: 16px;
+$font-size-20: 20px;
+$font-size-31: 31px;
 
 $transition: all linear 0.3s;
 // Size
@@ -15,6 +19,11 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px; 
+
+// fonts
+$font-heavy: 'AvenirHeavy';
+$font-medium: 'AvenirMedium';
+
 
 @mixin sm {
   @media (min-width:$sm) {

@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/critical.css"> 
+  <link rel="stylesheet" href="https://use.typekit.net/svt2qfn.css">
 </head>
 
 <body class="body">
@@ -19,11 +20,11 @@
             <div class="row justify-content-between">
                 <div class="header-nav col-md-6 col-xl-3 border-right">
                     <div class="dropdown py-2">
-                        <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="header-nav-icon me-3"><span></span></span>
                             Home
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                           <li><a class="dropdown-item" href="/">1</a></li>
                           <li><a class="dropdown-item" href="availability.html">2</a></li>
                           <li><a class="dropdown-item" href="extras.html">3</a></li>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="col-md-6 col-xl-3 border-left d-flex justify-content-end">
                     <div class="py-2">
-                        <span class="text-uppercase me-2">Discover the cove</span><span class="color-green fst-italic">differense</span>
+                        <span class="text-uppercase me-2">Discover the cove</span><span class="color-green tk-athelas">differense</span>
                     </div>
                 </div>
             </div>
@@ -51,20 +52,23 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-xl-6 col-md-9 header-text d-none d-md-flex align-items-center justify-content-center text-center fst-italic">
+                <div class="col-xl-6 col-md-9 header-text d-none d-md-flex align-items-center justify-content-center text-center tk-athelas">
                     <div>Check availability of your next <span class="color-blue">holiday</span> with <span class="color-blue"> Cove Communities</span></div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <div class="d-flex justify-content-end">
                         <div class="header-nav-mobile dropdown py-lg-2 d-md-none">
-                            <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="header-nav-icon me-3"><span></span></span>
                                 Home
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="/">1</a></li>
+                                <li><a class="dropdown-item" href="availability.html">2</a></li>
+                                <li><a class="dropdown-item" href="extras.html">3</a></li>
+                                <li><a class="dropdown-item" href="your_details.html">4</a></li>
+                                <li><a class="dropdown-item" href="payment.html">5</a></li>
+                                <li><a class="dropdown-item" href="confirmation.html">6</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,11 +155,11 @@
 
     <section class="section-payment section-summary pt-lg-3 pb-lg-4">
       <form action="#" class="container-xxl">
-        <div class="row align-items-center flex-column flex-lg-row justify-content-between">
-          <div class="col mb-4 mb-lg-0">
-            <div class="white-block pb-3 pb-lg-5 mb-3 mb-lg-5">
+        <div class="row align-items-start flex-column flex-lg-row justify-content-between">
+          <div class="col mb-4 mb-lg-0 mt-lg-4">
+            <div class="white-block with-after-blue pb-3 pb-lg-5">
               <h2>Payment amount</h2>
-              <div class="section-payment-prices mt-3 mt-lg-4">
+              <div class="font-size-14 font-lg-size-16 mt-3 mt-lg-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <span>Accommodation charge:</span>
                   <span>$3,500</span>
@@ -165,7 +169,7 @@
                   <span>$0</span>
                 </div>
               </div>
-              <div class="section-payment-totals pb-3 mb-3">
+              <div class="section-payment-totals font-heavy font-size-16 font-lg-size-20 pb-4 mb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <span>TOTAL CHARGE</span>
                   <span>£3500</span>
@@ -177,21 +181,27 @@
               </div>
               <h2>Amount to pay now...</h2>
               <div class="section-payment-amount mt-3 mt-lg-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment-full">
-                  <label class="form-check-label" for="payment-full">
+                <div class="form-check lg">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment-full" checked>
+                  <label class="form-check-label font-heavy" for="payment-full">
                     FULL PAYMENT: $3,500
                   </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check lg">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment-deposit">
-                  <label class="form-check-label" for="payment-deposit">
+                  <label class="form-check-label font-heavy" for="payment-deposit">
                     DEPOSIT: $200
                   </label>
                 </div>
               </div>
             </div>
-            <div class="d-none d-lg-flex justify-content-between">
+            <div class="d-none d-lg-flex justify-content-between flex-wrap">
+              <div class="form-check w-100 sm mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="terms1">
+                <label class="form-check-label ps-3" for="terms1">
+                  Please confirm that you have read and understood our <a href="#" class="color-blue text-decoration-underline">terms and conditions</a>.
+                </label>
+              </div>
               <a href="/" class="button grey b-radius px-4 py-2 d-inline-flex align-items-center">
                 back
               </a>
@@ -201,7 +211,8 @@
             </div>
           </div>
           
-          <div class="hexagon text-center ms-lg-2 py-4">
+          <div class="hexagon-wrapper">
+            <div class="hexagon text-center py-4">
     <p class="text-center color-white mt-3 mb-4 title">Your holiday summary</p>
     <div class="color-white mb-3">
         
@@ -229,6 +240,7 @@
     <span>Accommodation:</span><span>Gadabout Glamping</span>
 </div>
         
+        
     </div>
     <div class="total py-4 px-4 d-flex flex-column align-items-center flex-lg-row">
         <span class="color-white pe-lg-2 pb-2 pb-lg-0">Current total:</span>
@@ -236,9 +248,16 @@
     </div>
     <div class="tax color-white text-start mt-3 px-2 px-lg-4"><span class="pe-2">Tax:</span><span>$1,200</span></div>
 </div>
+          </div>
 
         </div>
-        <div class="d-flex d-lg-none justify-content-between mt-4">
+        <div class="d-flex d-lg-none justify-content-between mt-4 flex-wrap">
+          <div class="form-check w-100 sm mb-4">
+            <input class="form-check-input" type="checkbox" value="" id="terms2">
+            <label class="form-check-label ps-3" for="terms2">
+              Please confirm that you have read and understood our <a href="#" class="color-blue text-decoration-underline">terms and conditions</a>.
+            </label>
+          </div>
           <a href="/" class="button grey b-radius px-4 py-2 d-inline-flex align-items-center">
             back
           </a>

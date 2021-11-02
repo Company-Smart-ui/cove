@@ -14,9 +14,70 @@
     })
   
     <div class="container-xxl">
-      <h1>Confirmation of your holiday with us</h1>
+      <div class="row">
+        <h1 class="pb-3">Confirmation of your holiday with us</h1>
+        <p class="color-grey font-size-14 font-lg-size-16">Thank you for your booking, please check your details below and call us if there are any amendments required.</p>
+      </div>
     </div>
   
+    <section class="section-confirm section-summary pt-lg-3 pb-lg-4">
+      <div class="container-xxl">
+        <div class="row align-items-start flex-column-reverse flex-lg-row justify-content-between">
+          <div class="col mt-4 mt-lg-4">
+            <div class="white-block pb-3 pb-lg-5 mb-3 mb-lg-4">
+              <h2>Payment details</h2>
+              <div class="mt-4 d-flex justify-content-between align-items-start font-size-14 font-lg-size-16">
+                <span class="">Payment type:</span>
+                <span class="color-green text-end font-heavy">American Express</span>
+              </div>
+              <div class="mt-3 d-flex justify-content-between align-items-start font-size-16 font-lg-size-20">
+                <span class="font-heavy">AMOUNT PAID:</span>
+                <span class="color-green text-end font-heavy">$3500</span>
+              </div>
+            </div>
+            <div class="white-block pb-3 pb-lg-5 mb-3 mb-lg-5">
+              <h2>Contact details</h2>
+              <div class="mt-4 d-flex justify-content-between align-items-start flex-column flex-sm-row font-size-14 font-lg-size-16">
+                <span class="color-grey">Name:</span>
+                <span class="color-green text-sm-end font-heavy">Miss Laura Cannings</span>
+              </div>
+              <div class="mt-4 d-flex justify-content-between align-items-start flex-column flex-sm-row font-size-14 font-lg-size-16">
+                <span class="color-grey">Address:</span>
+                <span class="color-green text-sm-end font-heavy">
+                  38 Jumpers Avenue<br>
+                  Christchurch<br>
+                  Dorset<br>
+                  BH23 2ER<br>
+                  United Kingdom<br>
+                </span>
+              </div>
+              <div class="mt-4 d-flex justify-content-between align-items-start flex-column flex-sm-row font-size-14 font-lg-size-16">
+                <span class="color-grey">Telephone:</span>
+                <span class="color-green text-sm-end font-heavy">07808046407</span>
+              </div>
+              <div class="mt-4 d-flex justify-content-between align-items-start flex-column flex-sm-row font-size-14 font-lg-size-16">
+                <span class="color-grey">Mobile:</span>
+                <span class="color-green text-sm-end font-heavy">07808046407</span>
+              </div>
+              <div class="mt-4 d-flex justify-content-between align-items-start flex-column flex-sm-row font-size-14 font-lg-size-16">
+                <span class="color-grey">Email:</span>
+                <span class="color-green text-sm-end font-heavy">lauracannings@hotmail.com</span>
+              </div>
+            </div>
+            <p class="color-grey font-size-14 font-lg-size-16">Please contact us if any of the above information is incorrect or if you have any specific requirements.</p>
+          </div>
+          
+          <div class="hexagon-wrapper">
+            @@include('./html-templates/modules/summary.html', {
+              title: 'Reservation details',
+              html: 'reservation',
+              total: '$3,500',
+              taxs: ''
+            })
+          </div>
+        </div>
+      </div>
+    </section>
   
 </main>
   

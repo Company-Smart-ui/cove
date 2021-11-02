@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/critical.css"> 
+  <link rel="stylesheet" href="https://use.typekit.net/svt2qfn.css">
 </head>
 
 <body class="body">
@@ -19,11 +20,11 @@
             <div class="row justify-content-between">
                 <div class="header-nav col-md-6 col-xl-3 border-right">
                     <div class="dropdown py-2">
-                        <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="header-nav-icon me-3"><span></span></span>
                             Home
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                           <li><a class="dropdown-item" href="/">1</a></li>
                           <li><a class="dropdown-item" href="availability.html">2</a></li>
                           <li><a class="dropdown-item" href="extras.html">3</a></li>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="col-md-6 col-xl-3 border-left d-flex justify-content-end">
                     <div class="py-2">
-                        <span class="text-uppercase me-2">Discover the cove</span><span class="color-green fst-italic">differense</span>
+                        <span class="text-uppercase me-2">Discover the cove</span><span class="color-green tk-athelas">differense</span>
                     </div>
                 </div>
             </div>
@@ -51,20 +52,23 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-xl-6 col-md-9 header-text d-none d-md-flex align-items-center justify-content-center text-center fst-italic">
+                <div class="col-xl-6 col-md-9 header-text d-none d-md-flex align-items-center justify-content-center text-center tk-athelas">
                     <div>Check availability of your next <span class="color-blue">holiday</span> with <span class="color-blue"> Cove Communities</span></div>
                 </div>
                 <div class="col-6 col-xl-3">
                     <div class="d-flex justify-content-end">
                         <div class="header-nav-mobile dropdown py-lg-2 d-md-none">
-                            <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="header-nav-menu-btn text-uppercase dropdown-toggle color-green d-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="header-nav-icon me-3"><span></span></span>
                                 Home
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="/">1</a></li>
+                                <li><a class="dropdown-item" href="availability.html">2</a></li>
+                                <li><a class="dropdown-item" href="extras.html">3</a></li>
+                                <li><a class="dropdown-item" href="your_details.html">4</a></li>
+                                <li><a class="dropdown-item" href="payment.html">5</a></li>
+                                <li><a class="dropdown-item" href="confirmation.html">6</a></li>
                             </ul>
                         </div>
                     </div>
@@ -144,55 +148,53 @@
 </div>
 
   <div class="container-xxl">
-    <h1>Search for your holiday...</h1>
+    <div class="row">
+      <h1>Search for your holiday...</h1>
+    </div>
+    
   </div>
 
   <section>
     <div class="container-xxl">
         <form action="#">
-            <div class="white-block mb-3 mb-lg-4">
-                <div class="pb-4 pb-lg-5">
+            <div class="white-block row gx-1 mb-3 mb-lg-4">
+                <div class="col-12 pb-4 pb-lg-5">
                     <h2>Where would you like to go?</h2>
                 </div>
-                
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-0" aria-label="select location">
-                            <option selected>select location / state</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-0" aria-label="select RESORT">
-                            <option selected>select RESORT</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-0" aria-label="select location">
+                        <option selected>select location / state</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select" aria-label="select RESORT">
+                        <option selected>select RESORT</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
             </div>
 
-            <div class="white-block mb-3 mb-lg-4">
-                <div class="pb-4 pb-lg-5">
+            <div class="white-block row gx-1 mb-3 mb-lg-4">
+                <div class="col-12 pb-4 pb-lg-5">
                     <h2>What type of accommodation are you looking for?</h2>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <select class="form-select mb-lg-4" aria-label="select location">
-                            <option selected>RV</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                <div class="col-12 col-lg-4">
+                    <select class="form-select mb-lg-4" aria-label="select location">
+                        <option selected>RV</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
-                <div class="container-fluid">
-                    <div class="blue-block row py-2 py-lg-4 px-lg-2">
+                <div class="col-12">
+                    <div class="row gx-1 px-3 py-2 py-lg-4 blue-block">
                         <div class="col-12 col-lg-4 d-flex align-items-center">
-                            <div class="color-blue mb-2 mb-lg-0">You selected <strong>RV</strong> for your <strong>type of holiday</strong>, please can we have a couple more details...</div>
+                            <div class="color-blue mb-2 mb-lg-0 font-size-14 font-lg-size-16">You selected <strong>RV</strong> for your <strong>type of holiday</strong>, please can we have a couple more details...</div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
                             <select class="form-select mb-3 mb-lg-0" aria-label="select location">
@@ -211,78 +213,75 @@
                             </select>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="white-block mb-3 mb-lg-4">
-                <div class="pb-4 pb-lg-5">
+            <div class="white-block row gx-1 mb-3 mb-lg-4">
+                <div class="col-12 pb-4 pb-lg-5">
                     <h2>What date would you like to arrive?</h2>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select location">
-                            <option selected>12th DECEMBER 2021</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select RESORT">
-                            <option selected>7 nights</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-4" aria-label="select location">
+                        <option selected>12th DECEMBER 2021</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
-                <div class="container-fluid">
-                    <div class="blue-block row px-2 py-3 p-lg-3">
-                        <div class="col-12 d-flex align-items-center p-0">
-                            <div class="color-text">You selected <strong>RV</strong> for your <strong>type of holiday</strong>, please can we have a couple more details...</div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-4" aria-label="select RESORT">
+                        <option selected>7 nights</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class=" blue-block px-2 py-3 p-lg-3">
+                        <div class=" d-flex align-items-center p-0">
+                            <div class="color-text font-heavy font-size-14 font-lg-size-16">You selected <strong>RV</strong> for your <strong>type of holiday</strong>, please can we have a couple more details...</div>
                         </div>
                     </div>
                 </div>
+                
             </div>
 
-            <div class="white-block mb-4 mb-lg-5">
-                <div class="pb-4 pb-lg-5">
+            <div class="white-block row gx-1 mb-4 mb-lg-5">
+                <div class="col-12 pb-4 pb-lg-5">
                     <h2>How many people are in your party?</h2>
                 </div>
-                
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select location">
-                            <option selected>ADULTS (18+)</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select RESORT">
-                            <option selected>CHILDREN (12+)</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select location">
-                            <option selected>CHILDREN (UNDER 12)</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-select mb-3 mb-lg-4" aria-label="select RESORT">
-                            <option selected>PETS</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-4" aria-label="select location">
+                        <option selected>ADULTS (18+)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-4" aria-label="select RESORT">
+                        <option selected>CHILDREN (12+)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-3 mb-lg-4" aria-label="select location">
+                        <option selected>CHILDREN (UNDER 12)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <select class="form-select mb-lg-4" aria-label="select RESORT">
+                        <option selected>PETS</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
             </div>
 

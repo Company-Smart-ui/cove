@@ -1,4 +1,4 @@
-<div class="hexagon text-center ms-lg-2 py-4">
+<div class="hexagon text-center py-4">
     <p class="text-center color-white mt-3 mb-4 title">@@title</p>
     <div class="color-white mb-3">
         @@if (html === 'summary'){
@@ -14,6 +14,21 @@
                 {blocks: '<span>Infants:</span><span>0</span>'},
                 {blocks: '<span>Dogs:</span><span>1</span>'},
                 {blocks: '<span>Accommodation:</span><span>Gadabout Glamping</span>'},
+            ])
+        }
+        @@if (html === 'reservation'){
+            @@loop('summary-details.html', [
+                {blocks: '<span>Reservation number:</span><span>127777</span>'},
+                {blocks: '<span>Arrival date:</span><span>12/11/2021</span>'},
+                {blocks: '<span>Departure date:</span><span>16/11/2021</span>'},
+                {blocks: '<span>Number of nights:</span><span>4</span>'},
+                {blocks: '<span>Number of adults:</span><span>2</span>'},
+                {blocks: '<span>Number of children:</span><span>1</span>'},
+                {blocks: '<span>Number of Infants:</span><span>1</span>'},
+                {blocks: '<span>Accommodation:</span><span>Gadabput Glamping</span>'},
+                {blocks: '<span class="font-heavy">Extras:</span>'},
+                {blocks: '<span>Accommodation charge:</span><span>$3,500</span>'},
+                {blocks: '<span>Extras charge:</span><span>$0</span>'},
             ])
         }
     </div>

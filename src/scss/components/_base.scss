@@ -2,7 +2,7 @@ html , body{
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-medium;
 }
 body{
   background-color: #fff;
@@ -87,11 +87,33 @@ img {
   object-fit: cover;
 }
 
+.font{
+  &-heavy{font-family: $font-heavy;}
+  &-medium{font-family: $font-medium;}
+  &-size{
+    &-14{font-size: $font-size-14;}
+    &-16{font-size: $font-size;}
+    &-20{font-size: $font-size-20;}
+    &-31{font-size: $font-size-31;}
+  }
+  &-lg{
+    &-size{
+      @include lg{
+        &-14{font-size: $font-size-14;}
+        &-16{font-size: $font-size;}
+        &-20{font-size: $font-size-20;}
+        &-31{font-size: $font-size-31;}
+      }
+    }
+  }
+}
+
 .color{
   &-green{color: $color-green;}
   &-text{color: $color-text;}
   &-blue{color: $color-blue}
   &-white{color: #fff}
+  &-grey{color: $color-grey;}
 }
 
 .bg{
@@ -114,7 +136,7 @@ img {
   box-shadow: 0px 0px 17.43px 3.57px rgba(0, 0, 0, 0.1);
   padding: 25px 8px 10px;
   @include lg{
-    padding: 40px 30px 50px 40px
+    padding: 40px 30px 40px 35px
   }
   &-lg{
     .white-block{
@@ -186,15 +208,4 @@ img {
     opacity: 1;
   }
   @include lg{right: 10%;}
-}
-.hexagon{
-  position: relative;
-  &:before, 
-  &:after {
-    content: "";
-    width: 0; 
-    height: 0;
-    position: absolute; 
-    left: 0;
-  }
 }
