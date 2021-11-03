@@ -251,6 +251,12 @@
             .white-block{
                 flex: 1;
             }
+            &-img{
+                overflow: hidden;
+                max-height: 310px;
+                img{max-height: 100%;}
+                
+            }
             &-right{
                 flex: 1;
             }
@@ -351,8 +357,8 @@
     }
 }
 .with-after::after{
-    background-image: url('./../../images/after-box.png');
+    background-image: url('../images/after-box.png');
 }
 .with-after-blue::after{
-    background-image: url('./../../images/after-box-blue.png');
+    background-image: url('../images/after-box-blue.png');
 }
